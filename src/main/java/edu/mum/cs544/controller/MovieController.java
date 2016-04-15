@@ -15,43 +15,54 @@ import edu.mum.cs544.service.MovieService;
  */
 @Controller 
 public class MovieController<T> {
- private MovieService<T> movieserive = new MovieService<T>();
-@RequestMapping
+ private MovieService<T>  movieserive = new MovieService<T>();
+ 
+ 	@RequestMapping(value = "/")
 	public String MovieHome(){
 		
 		return "home";
 	}
-@RequestMapping("/name")
+
+@RequestMapping( value = "/name")
 public String getNameOfMovie(Model model){
 	String name = movieService.getNameOfMovie(model);
 	model.addAttribute(name);
-	return "name";
+	return "home";
 }
-@RequestMapping("genre")
+@RequestMapping(value= "/genre")
 public String getGenreOfMovie(Model model){
 	
-	movieserive.getClass().getSimpleName().
+	return "home";
+}
+@RequestMapping(value = "/rating")
+public String getRatingOfMovie(Model model){
+	String name = movieService.getNameOfMovie(model);
+	model.addAttribute(rating);
+	return "home";
+}
+}
+@RequestMapping
+public String getYearOfMovie(Model model){
 	
 }
 @RequestMapping
-public String getRatingOfMovie(){
+public String getNameOfArtist(Model model){
+	String name = movieService.getNameOfMovie(model);
+	model.addAttribute(name);
+	return "home";
+}
+}
+@RequestMapping
+public String getCharacterOnMovie(Model model){
 	
 }
 @RequestMapping
-public String getYearOfMovie(){
-	
+public String getDirectorOfMovie(Model model){
+	String name = movieService.getNameOfMovie(model);
+	model.addAttribute(director);
+	return "home";
 }
-@RequestMapping
-public String getNameOfArtist(){
-	
 }
-@RequestMapping
-public String getCharacterOnMovie(){
-	
-}
-@RequestMapping
-public String getDirectorOfMovie(){
-	
-}
+
 
 }
