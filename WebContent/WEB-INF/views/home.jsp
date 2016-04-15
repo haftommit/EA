@@ -48,13 +48,13 @@
                   <ul class="dropdown-menu">
                   	
                   	
-    			<li><a href="#">Name of the movie</a></li>
-			    <li><a href="#">Genre of the movie</a></li>
-			    <li><a href="#">Rating of the movie</a></li>
-			    <li><a href="#">Year of the movie</a></li>
-			    <li><a href="#">Name of the artist</a></li>
-			    <li><a href="#">Name of the character on the movie</a></li>
-			   <li><a href="#"> Director of the movie</a></li>
+    			<li><a href='{name}'>Name of the movie</a></li>
+			    <li><a href="{Genre}">Genre of the movie</a></li>
+			    <li><a href="{Rating}">Rating of the movie</a></li>
+			    <li><a href="{Year}">Year of the movie</a></li>
+			    <li><a href="{Artist}">Name of the artist</a></li>
+			    <li><a href="{Character}">Name of the character on the movie</a></li>
+			   <li><a href="{Directore}"> Director of the movie</a></li>
 			</ul>
                 </li>
               </ul>
